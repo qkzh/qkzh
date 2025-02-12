@@ -4,20 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         .hidden-link {
+            display: none; /* or use visibility: hidden; */
+        }
+
+        body, html {
+    margin:  0;
+    padding: 0;
+    height: 100%;
+}
+
+.content {
+    min-height: 100vh; /* Extend the length to 150% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #c5bbbb;
+    background-image: url(꽃.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*  화면에 딱맞게  */
+}
+.text-red {
+            color: rgb(234, 255, 41); /* Set text color to red */
+        }
+    </style> 
 </head>
 <body>
     <h1> 2일차 수업 내용 </h1>
-    <figure>
-           <img src="꽃.jpg" whidth="300", height="300">
-           <figcaption>이 장미꽃은 무척이나 향기로운 향기을 내뿜는 장미 입니다.</figcaption>
-           
-        </figure>
-    <h>  정리 진행방향  </h>
-    <p>
-        <a href="https://namu.wiki/w/%EC%96%B4%EB%8A%90%20%EC%9D%8C%EC%95%85%EC%97%90%EB%82%98%20%EC%96%B4%EC%9A%B8%EB%A6%AC%EB%8A%94%20%EB%A7%88%EB%B2%95%EC%9D%98%20%EC%A7%A4%EB%B0%A9">
+    <div class="content">
+        <a href="https://namu.wiki/w/%EC%96%B4%EB%8A%90%20%EC%9D%8C%EC%95%85%EC%97%90%EB%82%98%20%EC%96%B4%EC%9A%B8%EB%A6%AC%EB%8A%94%20%EB%A7%88%EB%B2%95%EC%9D%98%20%EC%A7%A4%EB%B0%A9" target="_blank">
             <img src="움짤.gif" alt="움짤.gif" whidth="200" , height="300">
         </a>
-    </p>       
-    
+    <h1>
+        <p 
+            class="text-red">월컴투
+        </p>
+    </h1>
+        
+        <h1>Welcome to My Website</h1>
+       <p>This is an example of extending the page length.</p>
+    </div>
 </body>
 </html>
